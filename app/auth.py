@@ -83,7 +83,7 @@ def login():
 
         if error is None:
             print(os.getcwd())
-            dotenv.load_dotenv(".apikeys")
+            dotenv.load_dotenv()
             FIREBASE_API_KEY = os.getenv("FIREBASE_API_KEY")
             FIREBASE_SIGN_IN_ENDPOINT = f"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key={FIREBASE_API_KEY}"
             data = {"email": email, "password": password}
@@ -95,7 +95,14 @@ def login():
                 session["user_id"] = res.json()["localId"]
                 session["username"] = res.json()["displayName"]
                 session["email"] = email
-                flash("Successfully logged in!", "success")
                 return redirect(url_for("index"))
+            else:
+                error = res.json()["error"]["message"]
+                flash(error, "error")
                 
     return render_template("auth/login.html")
+
+@bp.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("index"))
