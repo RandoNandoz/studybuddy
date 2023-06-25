@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
-    <body>
+    <body onLoad="generateList()">
         <nav>
             <input type="checkbox" id="menu">
             <label for="menu" class="menubtn">
@@ -36,18 +36,6 @@
                     <div class="column left ">
                         <div class = "progressbar">
                             <p>progress bar</p>
-                        </div>
-                        <ul id="tasklist"></ul>
-                        <script type="module" src="./assets/js/script.js"></script>
-                            <div class="templates">
-                                <div id="listItem">
-                                    <div class="row1">
-                                         <div class="title"></div>
-                                         <div class="amount"></div>
-                                    </div>
-                                <div class="row2"><div class="description"></div></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="column centre">

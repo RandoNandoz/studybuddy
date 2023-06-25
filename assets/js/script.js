@@ -1,17 +1,26 @@
-import data from '../../data/data.json' assert { type: 'json' };
-console.log(data);
+function generateList(){
+    fetch("../../data/data.json")
+      .then(response => response.json())
+      .then(data => createList(data));
+  }
+  
+  function createList(data) {
+    const mainUL = document.createElement('ol');
+    for (let i = 0; i < data.result.length; i++) {
+      const taskLI = document.createElement('li');
+      taskLI.innerHTML = data.result[i].name;
 
-var listdata = JSON.parse(data);
-var listItemString = $('#listItem').html();
-listdata.forEach(buildNewList);
+      const durationUL = document.createElement('ul');
+      for (var key in data.result[i].duration) {
+        const durationLI = document.createElement('li');
+        durationLI.innerHTML = key + ': ' + data.result[i].duration[key];
+        durationUL.appendChild(durationLI);
+      }
 
-function buildNewList(item, index) {
-  var listItem = $('<li>' + listItemString + '</li>');
-  var listItemTitle = $('.title', listItem);
-  listItemTitle.html(item.nask);
-  var listItemDuration = $('.duration', listItem);
-  listItemDuration.html(item.duration);
-  var listItemPriority = $('.priority', listItem);
-  listItemPriority.html(item.priority);
-  $('#dataList').append(listItem);
-}
+  
+      taskLI.appendChild(durationUL);
+      mainUL.appendChild(taskLI);
+    }
+    
+    document.body.appendChild(mainUL);
+  }
