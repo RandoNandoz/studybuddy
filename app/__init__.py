@@ -2,7 +2,7 @@ import os
 import json
 
 
-from flask import Flask, render_template
+from flask import Flask, render_template, session, request, flash
 
 def create_app(test_config=None):
     # create and configure the app
@@ -25,10 +25,11 @@ def create_app(test_config=None):
         pass
     
     # TODO: add functionality lol
-    @app.route('/')
+    @app.route('/', methods=('GET', 'POST'))
     def index():
         with open('app/static/data/data.json') as f:
             data = json.load(f)
+                
         return render_template('index.html', data=data)
     
     from . import auth
