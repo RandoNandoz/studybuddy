@@ -135,11 +135,13 @@ a.active, a:hover{
     float: left;
     justify-content: center;
     align-items: center;
+    position: inherit;
     padding: 10px;
 }
 
 .left {
     width: 30%;
+    
     }
 
 .centre {
@@ -156,6 +158,33 @@ a.active, a:hover{
     clear: both;
 }
 
+/* progress/timer */
+.progressbar{
+    width: 90%;
+    height: 25px;
+    background: #3D405B;
+    margin-bottom: 10px;
+}
+
+.progress{
+    float: right;
+    background: #cbcfdb;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.centre .startbtn{
+    padding: 20px;
+    width: 30%;
+    font-size: 20px;
+    color: white;
+    background-color: #3D405B;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: none;
+}
 
 /* mobile*/
 
@@ -210,4 +239,3 @@ a.active, a:hover{
     }
   }
 
-/* tasks */
