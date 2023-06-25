@@ -54,29 +54,4 @@ def schedule(tasks: list):
         ]
     )
     
-    return json.loads(completion.choices[0].message.content)
-        
-    
-# print(schedule([
-#     {
-#         "description": "Work on project",
-#         "time_required": 120,
-#         "priority": "highest",
-#         "diffculty": "high",
-#         "fun": True
-#     },
-#     {
-#         "description": "Clean the house",
-#         "time_required": 60,
-#         "priority": "high",
-#         "diffculty": "average",
-#         "fun": False
-#     },
-#     {
-#         "description": "Go to the gym",
-#         "time_required": 80,
-#         "priority": "average",
-#         "diffculty": "lowest",
-#         "fun": True
-#     }
-# ]))v
+    return json.loads(completion.choices[0].message.content) # type: ignore # completion.choices guaranteed to be non-empty, pylance is just dumb, again
