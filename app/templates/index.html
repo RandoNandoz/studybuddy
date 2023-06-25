@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="StudyBuddy">
         <title>Study Buddy</title> <!--browser tab title-->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="../static/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
@@ -35,7 +35,8 @@
                 <div class="row">
                     <div class="column left ">
                         <div class = "progressbar">
-                            <p>progress bar</p>
+                            <div class="progress"></div>
+                        </div>
                         </div>
                         <div class = "tasks">
                             <ul id = "tasklist"></ul>                            </ul>
@@ -43,7 +44,8 @@
                     </div>
                     <div class="column centre">
                         <div class="timer">
-                            <p>timer here</p>
+                            <p>Time left: <span class="time">Time</span></p>
+                            <button class = "startbtn">Start</button>
                         </div>
                     </div>
                     <div class="column right">
@@ -66,6 +68,6 @@
                 </div>
             </div>
         </section>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="../static/js/timer.js"></script>
     </body>
 </html>
