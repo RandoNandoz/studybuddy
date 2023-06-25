@@ -135,11 +135,13 @@ a.active, a:hover{
     float: left;
     justify-content: center;
     align-items: center;
+    position: inherit;
     padding: 10px;
 }
 
 .left {
     width: 30%;
+    
     }
 
 .centre {
@@ -181,6 +183,7 @@ a.active, a:hover{
     background-color: #3D405B;
     outline: none;
     border-radius: 5px;
+    box-shadow: none;
 }
 
 /* mobile*/
