@@ -1,0 +1,4 @@
+[  {"name": "Chemistry",    "duration": 30, "priority": "MODERATE"  },   
+   {"name": "Crying",    "duration": 60, "priority": "HIGH"  },   
+   {"name": "English",    "duration": 35, "priority": "LOW"  } 
+] 

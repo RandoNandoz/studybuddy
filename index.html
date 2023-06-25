@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="StudyBuddy">
         <title>Study Buddy</title> <!--browser tab title-->
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
@@ -37,8 +37,17 @@
                         <div class = "progressbar">
                             <p>progress bar</p>
                         </div>
-                        <div class = "tasks">
-                            <p>tasks</p>
+                        <ul id="tasklist"></ul>
+                        <script type="module" src="./assets/js/script.js"></script>
+                            <div class="templates">
+                                <div id="listItem">
+                                    <div class="row1">
+                                         <div class="title"></div>
+                                         <div class="amount"></div>
+                                    </div>
+                                <div class="row2"><div class="description"></div></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="column centre">
@@ -48,12 +57,13 @@
                     </div>
                     <div class="column right">
                         <div class = "pet">
-                            <p>pet</p>
+                            <img src="./img/banana-cat-crying.gif">
                         </div>
                     </div>
-                    </div>   
                 </div>
-            </div>
+            </div>   
+        </div>
+    </div>
         </section>
 
 
@@ -65,6 +75,6 @@
                 </div>
             </div>
         </section>
-
+    <script src="./assets/js/script.js"></script>
     </body>
 </html>

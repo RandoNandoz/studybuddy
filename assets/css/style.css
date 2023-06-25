@@ -156,13 +156,8 @@ a.active, a:hover{
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 
-/* mobile nav bar */
+/* mobile*/
 
 
 @media(max-width: 860px){
@@ -208,3 +203,9 @@ a.active, a:hover{
         font-size: 18px;
     }
 }
+
+@media screen and (max-width: 860px) {
+    .column {
+      width: 100%;
+    }
+  }
