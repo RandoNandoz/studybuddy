@@ -6,7 +6,7 @@ Cambridge Blue: #81B29A
 Sunset: #F2CC8F
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: lucida;
@@ -16,7 +16,7 @@ Sunset: #F2CC8F
     scroll-behavior: smooth;
 }
 
-body{
+body {
     position: relative;
     background-color: #F4F1DE;
 }
@@ -25,7 +25,7 @@ section {
     height: calc(100vh-80px);
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 20vh;
     background-repeat: no-repeat;
@@ -35,13 +35,13 @@ section {
 
 /*desktop navbar*/
 
-nav{
+nav {
     background-color: #E07A5F;
     height: 80px;
     width: 100%;
 }
 
-label.logo{
+label.logo {
     font-size: 50px;
     color: white;
     float: left;
@@ -49,19 +49,19 @@ label.logo{
     margin-left: 50px;
 }
 
-nav ul{
+nav ul {
     float: right;
     margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline;
     line-height: 80px;
     margin: 0 10px;
 }
 
 nav ul li a {
-    color:#ffffff;
+    color: #ffffff;
     font-size: 20px;
     text-transform: uppercase;
     padding: 7px 15px;
@@ -70,12 +70,13 @@ nav ul li a {
 
 /* toggle navbar */
 
-a.active, a:hover{
-    background-color:#9b5542af;
+a.active,
+a:hover {
+    background-color: #9b5542af;
     transition: .5s;
 }
 
-.menubtn{
+.menubtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -85,7 +86,7 @@ a.active, a:hover{
     display: none;
 }
 
-#menu{
+#menu {
     display: none;
 }
 
@@ -96,7 +97,7 @@ a.active, a:hover{
     padding-top: 20px;
 }
 
-#home .container .labels{
+#home .container .labels {
     width: 100%;
     min-height: 20vh;
     position: relative;
@@ -107,20 +108,20 @@ a.active, a:hover{
     padding-top: 2vh;
 }
 
-#home h1{
+#home h1 {
     color: #3D405B;
     font-size: 60px;
     font-weight: bold;
 }
 
-#home p{
+#home p {
     color: #3D405B;
     font-size: 30px;
     padding-top: 20px;
-} 
+}
 
 
-#home .containter .row{
+#home .containter .row {
     width: 100%;
     min-height: 80vh;
     position: relative;
@@ -131,7 +132,7 @@ a.active, a:hover{
     padding-top: 2vh;
 }
 
-.column{
+.column {
     float: left;
     justify-content: center;
     align-items: center;
@@ -141,16 +142,16 @@ a.active, a:hover{
 
 .left {
     width: 30%;
-    
-    }
+
+}
 
 .centre {
     width: 50%;
-    }
+}
 
-.right{
+.right {
     width: 20%;
-    }
+}
 
 .row:after {
     content: "";
@@ -159,14 +160,14 @@ a.active, a:hover{
 }
 
 /* progress/timer */
-.progressbar{
+.progressbar {
     width: 90%;
     height: 25px;
     background: #3D405B;
     margin-bottom: 10px;
 }
 
-.progress{
+.progress {
     float: right;
     background: #cbcfdb;
     position: relative;
@@ -175,7 +176,7 @@ a.active, a:hover{
 
 }
 
-.centre .startbtn{
+.centre .startbtn {
     padding: 20px;
     width: 30%;
     font-size: 20px;
@@ -189,11 +190,12 @@ a.active, a:hover{
 /* mobile*/
 
 
-@media(max-width: 860px){
-    .menubtn{
-        display: block;    
+@media(max-width: 860px) {
+    .menubtn {
+        display: block;
     }
-    ul{
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -211,31 +213,31 @@ a.active, a:hover{
         font-size: 20px;
     }
 
-    a:hover, a.active{
+    a:hover,
+    a.active {
         background: none;
         color: #F4F1DE;
     }
 
-    #check:checked ~ ul{
+    #check:checked~ul {
         left: 0;
     }
 }
 
 
-@media(max-width: 952px){
-    label.logo{
+@media(max-width: 952px) {
+    label.logo {
         font-size: 25px;
         padding-left: 20px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 18px;
     }
 }
 
 @media screen and (max-width: 860px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
-  }
-
+}

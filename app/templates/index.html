@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 
-<html lang ="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="StudyBuddy">
-        <title>Study Buddy</title> <!--browser tab title-->
-        <link rel="stylesheet" href="../static/css/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
+<html lang="en">
 
-    <body onLoad="generateList()">
-        <nav>
-            <input type="checkbox" id="menu">
-            <label for="menu" class="menubtn">
-                <i class="material-icons">menu</i>
-            </label>
-                <label class="logo">
-                    <i class="material-icons">eco</i>
-                </label>
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li> 
-            </ul>
-        </nav>
-        <!--home page-->
-        <section id="home">
-            <div class="container">
-                <div class="labels">
-                    <h1>Study Buddy</h1>
-                    <p>main page</p>
-                    <hr/>
-                </div>
-                <div class="row">
-                    <div class="column left ">
-                        <div class = "progressbar">
-                            <div class="progress"></div>
-                        </div>
-                        </div>
-                        <div class = "tasks">
-                            <ul id = "tasklist"></ul>                            </ul>
-                        </div>
-                    </div>
-                    <div class="column centre">
-                        <div class="timer">
-                            <p>Time left: <span class="time">Time</span></p>
-                            <button class = "startbtn">Start</button>
-                        </div>
-                    </div>
-                    <div class="column right">
-                        <div class = "pet">
-                            <img src="..\static\img\banana-cat-crying.gif">
-                        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="StudyBuddy">
+    <title>Study Buddy</title> <!--browser tab title-->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body onLoad="generateList()">
+    <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menubtn">
+            <i class="material-icons">menu</i>
+        </label>
+        <label class="logo">
+            <i class="material-icons">eco</i>
+        </label>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+        </ul>
+    </nav>
+    <!--home page-->
+    <section id="home">
+        <div class="container">
+            <div class="labels">
+                <h1>Study Buddy</h1>
+                <p>main page</p>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="column left ">
+                    <div class="progressbar">
+                        <div class="progress"></div>
                     </div>
                 </div>
-            </div>   
-        </div>
-    </div>
-        </section>
-
-
-        <!--about page-->
-        <section id="shop">
-            <div class="container">
-                <div class="shop">
-                    <h1></h1>
+                <div class="tasks">
+                    <ul id="tasklist"></ul>
+                    </ul>
                 </div>
             </div>
-        </section>
+            <div class="column centre">
+                <div class="timer">
+                    <p>Time left: <span class="time">Time</span></p>
+                    <button class="startbtn">Start</button>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="pet">
+                    <img src="..\static\img\banana-cat-crying.gif">
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!--about page-->
+    <section id="shop">
+        <div class="container">
+            <div class="shop">
+                <h1></h1>
+            </div>
+        </div>
+    </section>
     <script src="../static/js/timer.js"></script>
-    </body>
+</body>
+
 </html>

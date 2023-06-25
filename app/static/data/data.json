@@ -1,4 +1,23 @@
-[  {"name": "Chemistry",    "duration": 30, "priority": "MODERATE"  },   
-   {"name": "Crying",    "duration": 60, "priority": "HIGH"  },   
-   {"name": "English",    "duration": 35, "priority": "LOW"  } 
-] 
+[
+   {
+      "description": "Work on project",
+      "time_required": 120,
+      "priority": "highest",
+      "diffculty": "high",
+      "fun": true
+   },
+   {
+      "description": "Clean the house",
+      "time_required": 60,
+      "priority": "high",
+      "diffculty": "average",
+      "fun": false
+   },
+   {
+      "description": "Go to the gym",
+      "time_required": 80,
+      "priority": "average",
+      "diffculty": "lowest",
+      "fun": true
+   }
+]

@@ -2,17 +2,17 @@ const startbtn = document.querySelector(".startbtn");
 const timeSpan = document.querySelector(".time");
 const progress = document.querySelector(".progress");
 
-startbtn.addEventListener("click", ()=> {
+startbtn.addEventListener("click", () => {
     let interval = 5; //make this user input
     var countdown = setInterval(() => {
         interval--;
-        let progresswidth= interval/10 * 100
+        let progresswidth = interval / 10 * 100
 
-        if(interval>0){
+        if (interval > 0) {
             progress.style.width = progresswidth + "%";
-            timeSpan.innerHTML=interval + "s";
+            timeSpan.innerHTML = interval + "s";
         }
-        else{
+        else {
             clearInterval(countdown);
             progress.style.width = "0%"
             timeSpan.innerHTML = "completed";

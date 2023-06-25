@@ -16,7 +16,7 @@ def schedule(tasks: list):
     Given a list of tasks (tasks are represented as dictionaries), schedule the tasks and return the schedule as a dictionary with description and start and end times.
     
     SAMPLE DATA:
-    
+    ```
     {
     "description": "Work on project",
     "time_required": 120,
@@ -38,6 +38,7 @@ def schedule(tasks: list):
         "diffculty": "lowest",
         "fun": True
     }
+    ```
     """
     SYSTEM_INSTRUCTIONS = "Given a list of tasks in Python dictionary format, output a schedule for the day in raw JSON format with no escaping, all on one line, with the descriptions and times in the day to do them. Try to balance priority and difficulty as to complete high priority tasks, but not burn out the user. Consider all your data. DO NOT OUTPUT ANYTHING ELSE"
     completion = openai.ChatCompletion.create(
