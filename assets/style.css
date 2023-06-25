@@ -1,3 +1,11 @@
+/*Colours
+Eggshell: #F4F1DE
+Burnt Sienna: #E07A5F
+Delft Blue: #3D405B
+Cambridge Blue: #81B29A
+Sunset: #F2CC8F
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +18,7 @@
 
 body{
     position: relative;
-    background-color: rgb(173, 214, 163);
+    background-color: #F4F1DE;
 }
 
 section {
@@ -20,7 +28,7 @@ section {
 /*desktop navbar*/
 
 nav{
-    background-color: rgb(21, 54, 39);
+    background-color: #E07A5F;
     height: 80px;
     width: 100%;
 }
@@ -45,7 +53,7 @@ nav ul li{
 }
 
 nav ul li a {
-    color:white;
+    color:#ffffff;
     font-size: 20px;
     text-transform: uppercase;
     padding: 7px 15px;
@@ -55,7 +63,7 @@ nav ul li a {
 /* toggle navbar */
 
 a.active, a:hover{
-    background-color:rgba(172, 250, 224, 0.5);
+    background-color:#9b5542af;
     transition: .5s;
 }
 
@@ -101,13 +109,13 @@ a.active, a:hover{
 }
 
 #home h1{
-    color: white;
+    color: #3D405B;
     font-size: 60px;
     font-weight: bold;
 }
 
 #home p{
-    color: white;
+    color: #3D405B;
     font-size: 30px;
     padding-top: 20px;
 } 
@@ -123,7 +131,7 @@ a.active, a:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: rgb(187, 248, 187);
+        background-color: #F4F1DE;
         top: 80px;
         left: 0;
         text-align: center;
@@ -139,7 +147,7 @@ a.active, a:hover{
 
     a:hover, a.active{
         background: none;
-        color: rgb(178, 243, 207);
+        color: #F4F1DE;
     }
 
     #check:checked ~ ul{
