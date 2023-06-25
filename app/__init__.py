@@ -29,6 +29,8 @@ def create_app(test_config=None):
     def index():
         with open('app/static/data/data.json') as f:
             data = json.load(f)
+        # if request.method == 'POST':
+            # if request.form.get('')
                 
         return render_template('index.html', data=data)
     

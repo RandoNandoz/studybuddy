@@ -56,6 +56,12 @@
                                 <li class="list-group-item">Difficulty: {{item['difficulty']}}</li>
                             </ul>
                         </div>
+                        <div class="card-body">
+                            <form action="" method="post">
+                                <input type="submit" class="btn btn-primary" name="delete_task" id="delete_task"
+                                    value="Delete Task">
+                            </form>
+                        </div>
                     </div>
                     {% endfor %}
                     <form action="" method="post">
