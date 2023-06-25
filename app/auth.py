@@ -22,7 +22,7 @@ bp = Blueprint("auth", __name__, url_prefix="/auth")
 cred = firebase_admin.credentials.Certificate(
     "app/vshacks-project-firebase-adminsdk-guz81-a5d561efbc.json"
 )
-firebase_admin.initialize_app(cred)
+# firebase_admin.initialize_app(cred)
 
 
 @bp.route("/register", methods=("GET", "POST"))
