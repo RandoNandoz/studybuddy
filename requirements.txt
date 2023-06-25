@@ -1,0 +1,6 @@
+Flask
+firebase-admin
+pymongo
+requests
+python-dotenv
+openai
