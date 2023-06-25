@@ -1,7 +1,7 @@
 .DS_Store
 venv/
 .apikeys
-
+.env
 # FIREBASE_CREDS_DO_NOT_UPLOAD_TO_GITHUB
 vshacks-project-firebase-adminsdk-guz81-a5d561efbc.json
 
