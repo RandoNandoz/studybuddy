@@ -1,4 +1,6 @@
 import os
+import json
+
 
 from flask import Flask, render_template
 
@@ -25,7 +27,9 @@ def create_app(test_config=None):
     # TODO: add functionality lol
     @app.route('/')
     def index():
-        return render_template('index.html')
+        with open('app/static/data/data.json') as f:
+            data = json.load(f)
+        return render_template('index.html', data=data)
     
     from . import auth
     app.register_blueprint(auth.bp)

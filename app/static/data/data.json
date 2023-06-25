@@ -3,21 +3,21 @@
       "description": "Work on project",
       "time_required": 120,
       "priority": "highest",
-      "diffculty": "high",
+      "difficulty": "high",
       "fun": true
    },
    {
       "description": "Clean the house",
       "time_required": 60,
       "priority": "high",
-      "diffculty": "average",
+      "difficulty": "average",
       "fun": false
    },
    {
       "description": "Go to the gym",
       "time_required": 80,
       "priority": "average",
-      "diffculty": "lowest",
+      "difficulty": "lowest",
       "fun": true
    }
 ]
