@@ -25,6 +25,14 @@ section {
     height: calc(100vh-80px);
 }
 
+.container{
+    width: 100%;
+    min-height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /*desktop navbar*/
 
 nav{
@@ -82,25 +90,16 @@ a.active, a:hover{
 }
 
 
-/* landing page */
-
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
+/* home page */
 
 #home .container {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
-#home .container .content{
+#home .container .labels{
     width: 100%;
-    min-height: 100vh;
-    position: absolute;
+    min-height: 20vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +118,49 @@ a.active, a:hover{
     font-size: 30px;
     padding-top: 20px;
 } 
+
+
+#home .containter .row{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2vh;
+}
+
+.column{
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.left {
+    width: 30%;
+    }
+
+.centre {
+    width: 50%;
+    }
+
+.right{
+    width: 20%;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 /* mobile nav bar */
 
