@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="StudyBuddy">
         <title>Study Buddy</title> <!--browser tab title-->
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
@@ -48,7 +48,7 @@
                     </div>
                     <div class="column right">
                         <div class = "pet">
-                            <img src="./img/banana-cat-crying.gif">
+                            <img src="{{ url_for('static', filename='img/banana-cat-crying.gif') }}">
                         </div>
                     </div>
                 </div>
@@ -66,6 +66,6 @@
                 </div>
             </div>
         </section>
-    <script src="./assets/js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     </body>
 </html>
