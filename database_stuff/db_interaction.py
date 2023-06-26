@@ -73,3 +73,10 @@ def add_task(task: Task, username: str) -> None:
     """
     ref = firebase_admin.db.reference(f"{username}")
     ref.push(task.__dict__())
+
+def delete_task(key, username: str) -> None:
+    """
+    Deletes a task from the database.
+    """
+    ref = firebase_admin.db.reference(f"{username}")
+    ref.delete(task.__dict__())

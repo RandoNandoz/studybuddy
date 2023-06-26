@@ -36,8 +36,6 @@ def create_app(test_config=None):
             data = {
                 "description": "No tasks found"
             }
-        # if request.method == 'POST':
-        # if request.form.get('')
 
         return render_template("index.html", data=data)
 
